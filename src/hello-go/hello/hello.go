@@ -1,9 +1,13 @@
 package hello
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+)
 
-func SayHello()  {
+func SayHello() {
 
 	fmt.Println("hello go package!")
+	fmt.Println(runtime.NumCPU())
 
 }
